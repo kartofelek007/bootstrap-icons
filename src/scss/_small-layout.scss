@@ -1,0 +1,34 @@
+.small-layout {
+    .icon-name {
+        display: none;
+    }
+
+    .icon-content {
+        grid-template-rows: 70px 0;
+        border: 0;
+    }
+
+    .icon svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .icon-list {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .btn-toggle-layout-small {
+        display: none;
+    }
+
+    .btn-toggle-layout-big {
+        display: block;
+    }
+
+    .icon-checkbox,
+    .icon-download,
+    .icon-css,
+    .icon-bar {
+        display: none;
+    }
+}
