@@ -120,44 +120,44 @@
                             Example show how to use icon as a CSS background:
                         </p>
                         <pre><code>
-                           .icon-add {
-                                display: inline-block;
-                                width: 30px;
-                                height: 30px;
-                                background-image: url("data:image/svg+xml....");
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: 30px;
-                            }
+.icon-add {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml....");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
                         </code></pre>
 
                         <p>Second example show how to use icon like css mask. This technique allows you to change the color of an icon very easily using background-color:</p>
 
                         <pre><code>
-                            %icon {
-                                display: inline-flex;
-                                width: 30px;
-                                height: 30px;
-                                -webkit-mask: $image;
-                                -webkit-mask-position: center;
-                                -webkit-mask-size: 30px;
-                                -webkit-mask-repeat: no-repeat;
-                                mask: $image;
-                                mask-position: center;
-                                mask-size: 30px;
-                                mask-repeat: no-repeat;
-                                background-color: currentColor;
-                            }
+%icon {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    -webkit-mask: $image;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 30px;
+    -webkit-mask-repeat: no-repeat;
+    mask: $image;
+    mask-position: center;
+    mask-size: 30px;
+    mask-repeat: no-repeat;
+    background-color: currentColor;
+}
 
-                            .icon-add {
-                                @extend %icon;
-                                $image: url("data:image/svg+xml,%3Csvg ...");
-                                -webkit-mask-image: $image;
-                                mask-image: $image;
-                            }
-                            .icon-add:hover {
-                                background-color: gold;
-                            }
+.icon-add {
+    @extend %icon;
+    $image: url("data:image/svg+xml,%3Csvg ...");
+    -webkit-mask-image: $image;
+    mask-image: $image;
+}
+.icon-add:hover {
+    background-color: gold;
+}
                         </code></pre>
                     </li>
                 </ul>
